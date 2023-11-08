@@ -1,0 +1,29 @@
+<script setup lang="ts">
+// import { ref, provide } from 'vue';
+import { ChildA, ChildB } from "../components";
+import { useHomeStore } from "../stores";
+
+//PROVIDE/INJECT
+// const count = ref<number>(0);
+
+// function increment(): void {
+//   count.value++;
+//   console.log('count: ', count.value);
+// }
+
+//
+const { count } = useHomeStore();
+
+// provide('count', count);
+</script>
+
+<template>
+  <main>
+    <div class="mb-6">Count in home: {{ count }}</div>
+
+    <div class="space-y-3">
+      <ChildA />
+      <ChildB />
+    </div>
+  </main>
+</template>
