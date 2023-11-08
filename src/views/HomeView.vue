@@ -1,7 +1,7 @@
 <script setup lang="ts">
 // import { ref, provide } from 'vue';
-import { ChildA, ChildB } from "../components";
-import { useHomeStore } from "../stores";
+import { ChildA, ChildB } from '@app/components';
+import { useHomeStore } from '@app/stores';
 
 //PROVIDE/INJECT
 // const count = ref<number>(0);

@@ -2,4 +2,4 @@ export {
   useTodosQuery,
   useDeleteTodoMutation,
   useStoreTodoMutation,
-} from "./todos";
+} from './todos';

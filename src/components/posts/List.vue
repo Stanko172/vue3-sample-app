@@ -10,7 +10,7 @@
 </template>
 
 <script setup lang="ts">
-import { useTodosQuery, useDeleteTodoMutation } from '../../composables';
+import { useTodosQuery, useDeleteTodoMutation } from '@app/composables';
 import Button from 'primevue/button';
 
 const { data: todos } = useTodosQuery();

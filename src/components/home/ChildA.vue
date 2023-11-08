@@ -7,8 +7,8 @@
 
 <script setup lang="ts">
 // import { inject } from 'vue';
-import Button from "primevue/button";
-import { useHomeStore } from "../../stores";
+import Button from 'primevue/button';
+import { useHomeStore } from '@app/stores';
 
 //PROVIDE/INJECT
 // const count = inject<number>(0);

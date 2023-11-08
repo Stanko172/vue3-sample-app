@@ -6,5 +6,5 @@
 </template>
 
 <script setup lang="ts">
-import { Add, List } from "../components";
+import { Add, List } from '@app/components';
 </script>

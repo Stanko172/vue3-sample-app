@@ -1,7 +1,7 @@
-import { useMutation, useQueryClient } from "vue-query";
-import { http } from "../../services";
-import { Todo } from "../../types";
-import { ref } from "vue";
+import { useMutation, useQueryClient } from 'vue-query';
+import { http } from '../../services';
+import { Todo } from '../../types';
+import { ref } from 'vue';
 
 export function useStoreTodoMutation() {
   const queryClient = useQueryClient();
@@ -21,11 +21,11 @@ export function useStoreTodoMutation() {
   }
 
   async function storeTodo(todo: Todo): Promise<Todo> {
-    return await http.post("todos", todo);
+    return await http.post('todos', todo);
   }
 
-  const { mutate } = useMutation("store-todo", storeTodo, {
-    onSuccess: () => queryClient.invalidateQueries("todos"),
+  const { mutate } = useMutation('store-todo', storeTodo, {
+    onSuccess: () => queryClient.invalidateQueries('todos'),
     onError: processErrorResponse,
   });
 

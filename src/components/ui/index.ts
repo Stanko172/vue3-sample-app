@@ -1,1 +1,1 @@
-export { ResourceList } from "./resource-list";
+export { ResourceList } from './resource-list';
