@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import AppLayout from '@app/layouts/AppLayout.vue';
 // import { ref, provide } from 'vue';
 import { ChildA, ChildB } from '@app/components';
 import { useHomeStore } from '@app/stores';
@@ -18,12 +19,14 @@ const { count } = useHomeStore();
 </script>
 
 <template>
-  <main>
-    <div class="mb-6">Count in home: {{ count }}</div>
+  <AppLayout>
+    <main>
+      <div class="mb-6">Count in home: {{ count }}</div>
 
-    <div class="space-y-3">
-      <ChildA />
-      <ChildB />
-    </div>
-  </main>
+      <div class="space-y-3">
+        <ChildA />
+        <ChildB />
+      </div>
+    </main>
+  </AppLayout>
 </template>
